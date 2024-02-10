@@ -1,0 +1,397 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{color,pxfonts,fix-cm}
+\usepackage{latexsym}
+\usepackage[mathletters]{ucs}
+\DeclareUnicodeCharacter{8211}{\textendash}
+\DeclareUnicodeCharacter{8212}{\textemdash}
+\DeclareUnicodeCharacter{46}{\textperiodcentered}
+\DeclareUnicodeCharacter{58}{$\colon$}
+\DeclareUnicodeCharacter{8226}{$\bullet$}
+\DeclareUnicodeCharacter{32}{$\ $}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{pict2e}
+\usepackage{wasysym}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\pagestyle{empty}
+\usepackage[margin=0in,paperwidth=595pt,paperheight=842pt]{geometry}
+\begin{document}
+\definecolor{color_29791}{rgb}{0,0,0}
+\definecolor{color_274846}{rgb}{1,0,0}
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(539.62,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}1 }
+\put(21.84,-153.18){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}  }
+\put(21.84,-164.7){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-176.22){\fontsize{9}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Resumen— El documento cuenta con un listado de }
+\put(21.84,-186.54){\fontsize{9}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}requerimientos generales, funcionales y no funcionales, así como }
+\put(21.84,-196.98){\fontsize{9}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}una plantilla SRS con el nombre del requerimiento, descripción, }
+\put(21.84,-207.3){\fontsize{9}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}encargados de diseñar, verificar y validar los mismos.  }
+\put(33.84,-218.7){\fontsize{9}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Estos requerimientos fueron solicitados para el nuestro sitio }
+\put(21.84,-229.02){\fontsize{9}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}web y proyecto en cuestión del cual su función principal es el }
+\put(21.84,-239.37){\fontsize{9}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}manejo de una tienda donde se pueden ordenar diversos }
+\put(21.84,-249.69){\fontsize{9}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}productos de maquillaje, donde el objetivo es que la página luzca }
+\put(21.84,-260.01){\fontsize{9}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}llamativa y decente.  }
+\put(103.22,-283.41){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}I.  INTRODUCCIÓN }
+\put(32.04,-298.89){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}El presente documento tiene como objetivo describir los }
+\put(21.84,-310.89){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}requerimientos necesarios para el desarrollo de una aplicación }
+\put(21.84,-323.01){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}web de comercio electrónico (e-commerce) especializada en la }
+\put(21.84,-335.13){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}venta de productos de belleza.  }
+\put(32.04,-347.13){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}La plataforma permitirá a los usuarios explorar, seleccionar }
+\put(21.84,-359.25){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}y comprar diversos productos de maquillaje tales como }
+\put(21.84,-371.25){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}labiales, sombras y delineadores. El documento se organiza en }
+\put(21.84,-383.37){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}cuatro secciones principales: la plantilla SRS (Software }
+\put(21.84,-395.49){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Requirements Specification), los requerimientos generales, los }
+\put(21.84,-407.51){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}requerimientos funcionales y los requerimientos no }
+\put(21.84,-419.63){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}funcionales.  }
+\put(32.04,-431.75){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}La plantilla SRS establece un marco estructurado para la }
+\put(21.84,-443.75){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}especificación de los requisitos de software, mientras que las }
+\put(21.84,-455.87){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}secciones subsiguientes se centran en los requisitos específicos }
+\put(21.84,-467.87){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}que deben satisfacerse para garantizar que el cliente disfrutará }
+\put(21.84,-479.99){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}la página web. Los requerimientos generales delinean la }
+\put(21.84,-492.11){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}funcionalidad básica del software, abordando aspectos clave }
+\put(21.84,-504.11){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}como la navegación del sitio, la administración de productos y }
+\put(21.84,-516.23){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}las transacciones. Por otro lado, los requerimientos no }
+\put(21.84,-528.23){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}funcionales se centran en la seguridad, mientras los funcionales }
+\put(21.84,-540.35){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}en la experiencia del cliente al querer visualizar productos. }
+\put(117.38,-564.47){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}II.  PROPOSITO  }
+\put(33.84,-579.98){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-591.98){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Este proyecto tiene la finalidad realizar un sitio web que }
+\put(21.84,-604.1){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}cumpla con las cualidades y características necesarias para }
+\put(21.84,-616.22){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}contar con un UX y UI funcional y eficiente, sin embargo, en }
+\put(21.84,-628.22){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}esta fase del proyecto hemos decidido un enfoque en el }
+\put(21.84,-640.34){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}frontend. }
+\put(21.84,-652.46){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(119.06,-676.46){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}III.  ALCANCE }
+\put(33.84,-691.94){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-704.06){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Se realizará un rediseño de nuestra página actual }
+\put(21.84,-716.18){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}enfocándonos en el frontend donde se buscará la mejora }
+\put(165.86,-735.616){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_29791][even odd rule]
+(21.84pt, -733.576pt) -- (165.86pt, -733.576pt)
+ -- (165.86pt, -733.576pt)
+ -- (165.86pt, -733.0959pt)
+ -- (165.86pt, -733.0959pt)
+ -- (21.84pt, -733.0959pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(33.84,-742.36){\fontsize{5.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}*}
+\put(36.36,-745.36){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Frameworks }
+\put(288.65,-152.46){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}estética de ella y una interfaz mas amigable y llamativa para el }
+\put(288.65,-164.46){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}usuario, además de renovar nuestro stock de productos y pulir }
+\put(288.65,-176.58){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}detalles del backend.  }
+\put(352.87,-200.7){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}IV.  PERSONAL INVOLUCRADO }
+\put(300.67,-216.18){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Integrantes del equipo Serendipity, información de contacto }
+\put(288.65,-228.18){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}y responsabilidades para el desarrollo del proyecto.  }
+\put(300.67,-240.33){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-252.45){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.6,-496.86){\includegraphics[width=254.9pt,height=241.8pt]{latexImage_43cf46d956df2bcbec41b352b42f2917.png}}
+\put(555.6,-496.91){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(359.11,-518.87){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}V.  DESCRIPCION GENERAL }
+\put(300.67,-534.35){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}2.1 Perspectiva del producto }
+\put(300.67,-546.47){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}El producto es un proyecto independiente de un sistema }
+\put(288.65,-558.47){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}mayor. Únicamente es para un buen almacenamiento y }
+\put(288.65,-570.59){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}visualización de productos. }
+\put(300.67,-582.62){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-594.74){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}2.2 Funcionalidad del producto }
+\put(300.67,-606.86){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}El resultado esperado del producto el crear una página web }
+\put(288.65,-618.86){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}la cual el cliente pueda usar y adquirir los productos que desea, }
+\put(288.65,-630.98){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}enfocándonos en su experiencia y visualización de nuestro }
+\put(288.65,-643.1){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}front end de calidad decente. }
+\put(300.67,-655.1){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-667.22){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-679.22){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-691.34){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-703.46){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-715.46){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-727.58){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-739.576){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(248.69,-69.17999){\fontsize{14.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} Serendipity }
+\put(102.5,-104.94){\fontsize{11.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Barajas Lopez Armando, Corbala Lizárraga Sebastián, Esquivel Farfán Nelly Andrea }
+\put(268.97,-118.62){\fontsize{11.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Grupo 4F }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(539.62,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}2 }
+\put(33.84,-53.20001){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(86.66,-77.21997){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}VI.  REQUISITOS ESPECIFICOS }
+\put(33.84,-92.82001){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-104.82){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Para lograr un buen desarrollo del frontend el cual sea }
+\put(21.84,-116.94){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}satisfactorio para nuestro cliente sobre nuestra página y }
+\put(21.84,-128.94){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}servicio se necesitarán los siguientes requisitos.  }
+\put(33.84,-141.06){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-153.18){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.85,-301.9601){\includegraphics[width=225.25pt,height=146.15pt]{latexImage_23d55240dedf657809dbbb6175e6b299.png}}
+\put(259.13,-302.01){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-310.17){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.85,-454.36){\includegraphics[width=229.55pt,height=142.55pt]{latexImage_d5a2060051858c3c1672dd331c72525e.png}}
+\put(269.45,-454.43){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-461.87){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.85,-598.26){\includegraphics[width=228.35pt,height=134.8pt]{latexImage_f8c89334239bcda93fd011b34a7e2083.png}}
+\put(268.25,-598.34){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-605.9){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-615.14){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.6,-213.66){\includegraphics[width=244.2pt,height=169.8pt]{latexImage_66e5120b887b3c2c2dc76f0eaa093fd5.png}}
+\put(550.92,-213.66){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-221.1){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-230.34){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.6,-386.66){\includegraphics[width=248.4pt,height=154.65pt]{latexImage_92441bac385ef6e6a002ad96ec5c00a8.png}}
+\put(555.12,-386.73){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-394.29){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.6,-548.46){\includegraphics[width=245.05pt,height=152.55pt]{latexImage_aa04d5d0fa08fda9c420c755c4b403c5.png}}
+\put(551.76,-548.51){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-556.07){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-565.31){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-574.46){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-583.7){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-592.94){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-602.06){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-611.3){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-620.54){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-629.66){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-638.9){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-648.02){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-657.26){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-666.5){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-675.62){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-684.86){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-694.1){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-703.22){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-712.46){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(306.67,-721.7){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(539.62,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}3 }
+\put(85.7,-53.20001){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}VII.  REQUISITOS FUNCIONALES }
+\put(21.84,-68.67999){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-80.21997){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Sitio web optimizado visualmente }
+\put(33.84,-92.21997){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}La página podrá ser visualizada sin grandes errores donde se }
+\put(21.84,-104.34){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}afecte la experiencia visual de nuestro usuario y pueda navegar }
+\put(21.84,-116.46){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}cómodamente en ella. }
+\put(33.84,-128.46){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-140.58){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Descripción detallada de productos }
+\put(33.84,-152.58){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Para mejorar la experiencia del usuario, a cada producto se }
+\put(21.84,-164.7){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}le hará una descripción detallada sobre el y así el cliente sabrá }
+\put(21.84,-176.82){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}que es lo que está comprando.  }
+\put(21.84,-188.82){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-200.94){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Registro de Usuario: }
+\put(33.84,-213.06){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}El sistema permitirá a los usuarios registrarse con su }
+\put(21.84,-225.06){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}información personal, como nombre, dirección de correo }
+\put(21.84,-237.21){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}electrónico y contraseña. }
+\put(33.84,-249.21){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-261.33){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Inicio de Sesión: }
+\put(33.84,-273.45){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Los usuarios podrán iniciar sesión en sus cuentas utilizando }
+\put(21.84,-285.45){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}su dirección de correo electrónico y contraseña registrada. }
+\put(33.84,-297.57){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-309.57){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Navegación y Búsqueda: }
+\put(33.84,-321.69){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Los usuarios podrán explorar y buscar productos de belleza }
+\put(21.84,-333.81){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}por categorías, marcas o palabras clave. }
+\put(33.84,-345.81){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-357.93){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Visualización de Productos: }
+\put(33.84,-370.05){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Los usuarios podrán ver información detallada de los }
+\put(21.84,-382.05){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}productos, incluyendo imágenes, descripciones, precios y }
+\put(21.84,-394.17){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}disponibilidad. }
+\put(33.84,-406.19){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-418.31){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Añadir al Carrito: }
+\put(33.84,-430.43){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Los usuarios podrán agregar productos a su carrito de }
+\put(21.84,-442.43){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}compra para posteriormente proceder con el proceso de }
+\put(21.84,-454.55){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}compra. }
+\put(33.84,-466.55){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-478.67){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Gestión del Carrito: }
+\put(33.84,-490.79){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Los usuarios podrán visualizar, editar y eliminar productos }
+\put(21.84,-502.79){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}en su carrito de compra antes de finalizar la compra. }
+\put(33.84,-514.91){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-527.03){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Proceso de Compra: }
+\put(33.84,-539.03){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Los usuarios podrán completar la compra, proporcionando }
+\put(21.84,-551.15){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}información de envío y pago para finalizar la transacción. }
+\put(33.84,-563.15){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-575.3){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Historial de Compras: }
+\put(33.84,-587.42){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Los usuarios podrán acceder a un historial de compras que }
+\put(21.84,-599.42){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}detalle sus transacciones previas. }
+\put(33.84,-611.54){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-623.54){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-635.66){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-647.78){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-659.78){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-671.9){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-684.02){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(33.84,-696.02){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(21.84,-708.14){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(340.03,-53.20001){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}VIII.  REQUISITOS NO FUNCIONALES }
+\put(300.67,-68.67999){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}7.1.1 Rendimiento }
+\put(300.67,-80.82001){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}El sistema debe ser capaz de manejar una carga de trabajo }
+\put(288.65,-92.82001){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}determinada en un tiempo específico. }
+\put(300.67,-104.94){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-116.94){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}7.1.2 Seguridad }
+\put(300.67,-129.06){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Su función es proteger los datos del usuario y la }
+\put(302.83,-141.18){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}información confidencial.  }
+\put(300.67,-153.18){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}La página web debe implementar medidas de seguridad }
+\put(302.83,-165.3){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}adecuadas para proteger la información del usuario, ya que }
+\put(302.83,-177.3){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}al ser una tienda online en ella se almacenan datos de }
+\put(302.83,-189.42){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}personas, por ejemplo, sus tarjetas, por lo que se debe tener }
+\put(302.83,-201.54){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}seguridad respecto a estos datos y cumplir con los }
+\put(302.83,-213.54){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}estándares de seguridad de la industria capaz de detectar y }
+\put(302.83,-225.66){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}prevenir posibles ataques y vulnerabilidades.  }
+\put(300.67,-237.81){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-249.81){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}7.1.3 Fiabilidad }
+\put(300.67,-261.93){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}El sistema debe ser capaz de funcionar continuamente }
+\put(302.83,-273.93){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}durante un tiempo determinado sin fallas. }
+\put(381.19,-298.05){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}IX.  ARQUITECTURA }
+\put(300.67,-313.53){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Arquitectura escogida: Cliente – servidor }
+\put(300.67,-325.65){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Justificación }
+\put(300.67,-337.65){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Después de un análisis se análisis de los requerimientos de }
+\put(302.83,-349.77){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}las tecnologías usadas, además de las futuras }
+\put(302.83,-361.89){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}implementaciones, la más conveniente para el desarrollo de }
+\put(302.83,-373.89){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}esta aplicación es utilizar la arquitectura cliente – servidor. }
+\put(300.67,-386.01){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}La cual es similar a los manejos de tiendas en la vida real el }
+\put(302.83,-398.01){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}cliente pide y recibe una respuesta, por lo que esta opción }
+\put(302.83,-410.15){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}nos pareció la más ideal. }
+\put(300.67,-422.27){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-434.27){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-446.39){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-458.51){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(300.67,-470.51){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-482.63){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-494.63){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-506.75){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-518.87){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-530.87){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-542.99){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-554.99){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-567.11){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-579.26){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-591.26){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-603.38){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-615.5){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-627.5){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-639.62){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-651.62){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-663.74){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-675.86){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-687.86){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-699.98){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(300.67,-712.1){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_274846} }
+\put(288.65,-722.3){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(539.62,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4 }
+\put(115.94,-53.20001){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}X.}
+\put(39.85,-614.8101){\includegraphics[width=400.8pt,height=555.5001pt]{latexImage_2ecf2224c58b05cf72f09e9ca1e34065.png}}
+\put(440.74,-614.9){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-622.46){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-631.7){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-640.82){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-650.06){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-659.3){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-668.42){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-677.66){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-686.9){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-696.02){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-705.26){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-714.5){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-723.62){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-732.856){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-741.976){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(539.62,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}5}
+\put(39.85,-453.51){\includegraphics[width=334.65pt,height=409.8pt]{latexImage_87e0cc7b430b2b08221bfe60400dfb4d.png}}
+\put(374.59,-453.59){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(539.62,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}6 }
+\put(39.84,-51.28003){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-60.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.85,-480.86){\includegraphics[width=483.35pt,height=418.65pt]{latexImage_d6f1e37bc857c7ffe67c5a5996a3b082.png}}
+\put(523.3,-480.95){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(539.62,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}7}
+\put(39.85,-436.96){\includegraphics[width=497.15pt,height=393.1pt]{latexImage_9711dbd242cf22fd85ecbd8bf4857ab3.png}}
+\put(537.1,-437.03){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(539.62,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}8}
+\put(39.85,-449.56){\includegraphics[width=415.3pt,height=405.7pt]{latexImage_4a82fdfb6bdb9835a29e4b8c05f009aa.png}}
+\put(455.26,-449.63){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(539.62,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}9}
+\put(39.85,-270.06){\includegraphics[width=387.95pt,height=226.2pt]{latexImage_f5146f95e7559840a61dbb6f4ed76364.png}}
+\put(427.9,-270.09){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.85,-619.96){\includegraphics[width=344.85pt,height=349.9pt]{latexImage_ea113ed69d8c54d5561d4ff9046f36c6.png}}
+\put(384.79,-620.06){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(535.54,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}10}
+\put(39.85,-336.51){\includegraphics[width=497.65pt,height=292.65pt]{latexImage_7c19ac15b9acc539633c4f5a65d21492.png}}
+\put(537.58,-336.57){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(535.54,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}11 }
+\put(104.9,-65.20001){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}XI}
+\put(21.85,-326.06){\includegraphics[width=513.25pt,height=254.75pt]{latexImage_830b3371aee6dae48be701d33060ad99.png}}
+\put(535.18,-326.13){\fontsize{9.96}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.85,-577.86){\includegraphics[width=520.55pt,height=251.8pt]{latexImage_99220d96663a9cbbb5edfc46464b84c5.png}}
+\put(560.52,-577.94){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(535.54,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}12}
+\put(39.85,-294.76){\includegraphics[width=508.65pt,height=250.9pt]{latexImage_e04ca71a0343cd22c449380a0bda494a.png}}
+\put(548.64,-294.81){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.85,-477.06){\includegraphics[width=490.3pt,height=182.3pt]{latexImage_2c3cb898445964e3fac3d6d4e00f1e9a.png}}
+\put(530.26,-477.11){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-484.55){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-493.79){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.84,-503.03){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(39.85,-744.16){\includegraphics[width=496.05pt,height=239.5pt]{latexImage_be68377668b588178cfec76995ae34ec.png}}
+\put(536.02,-744.28){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(21.84,-24.40002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(535.54,-24.52002){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}13}
+\put(39.85,-295.26){\includegraphics[width=509.05pt,height=251.4pt]{latexImage_e76ae7ca090b8eae0a8a9644eab84f54.png}}
+\put(549,-295.29){\fontsize{8.04}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\end{document}
