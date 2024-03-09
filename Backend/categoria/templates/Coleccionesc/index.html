@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block titulo %} Lista de colecciones {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        <a name="" id="" class="btn btn-success" href="{% url 'crear coleccion' %}" role="button">Agregar nueva coleccion</a>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Colecciones</h4>
+
+        <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th> codigo </th>
+                        <th> nombre </th>
+                        <th> descripcion </th>
+                        <th> categorias </th>
+                        <th> acciones </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for colecciones in Colecciones %}
+                    <tr>
+                        <td>{{ i.codigo }}</td>
+                        <td>{{ i.nombre }}</td>
+                        <td>{{ i.descripcion }}</td>
+                        <td>{{ i.categoria.nombre }}</td>
+                        <td> <a name="" id="" class="btn btn-info" href="{% url 'actualizar coleccion' i.codigo %}" role="button">Actualizar</a> 
+                            |
+                            <a name="" id="" class="btn btn-danger" href="{% url 'eliminar coleccion' i.codigo %}" role="button">Borrar</a> </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>       
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+
+.banner-accesorios {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 100px; 
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+
+.banner-img {
+  margin: 20px; 
+}
+
+
+.banner-img:nth-child(1) {
+  width: 400px;
+}

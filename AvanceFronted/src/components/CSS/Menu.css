@@ -1,0 +1,23 @@
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li a {
+    color: #333; 
+    text-decoration: none; 
+  }
+  
+  .menu li a:hover {
+    color: #fbe189; 
+  }
+
+  .menu li a.active {
+    color: #fbe189; 
+    font-weight: bold; 
+  }

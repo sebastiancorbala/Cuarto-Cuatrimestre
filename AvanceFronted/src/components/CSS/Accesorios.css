@@ -1,0 +1,23 @@
+.banner-accesorios {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  /* Estilo para cada imagen del banner */
+  .banner-img {
+    width: 400px; 
+    margin: 0; 
+  }
+
+ 
+  .frase {
+    margin-top: 12px; 
+    font-size: 22px; 
+    text-align: left; 
+    font-style: italic;
+    margin-left: 300px;
+  }

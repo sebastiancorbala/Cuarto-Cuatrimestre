@@ -1,0 +1,28 @@
+.banner-rostro {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 100px; 
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  
+  .banner-img {
+    width: 400px; 
+    margin: 0; 
+    margin-right: 20px; 
+  }
+
+  .banner-img:nth-child(2) {
+    width: 440px; 
+}
+
+.frase {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.seccion-carrito {
+    margin-top: 70px;
+}

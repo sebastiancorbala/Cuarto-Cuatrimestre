@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block titulo %} Lista de cuentas {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        <a name="" id="" class="btn btn-success" href="{% url 'crear cuenta' %}" role="button">Agregar nueva cuenta</a>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Cuentas</h4>
+
+        <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th> username </th>
+                        <th> correo </th>
+                        <th> contraseña </th>
+                        <th> acciones </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for cuenta in cuenta %}
+                    <tr>
+                        <td>{{ cuenta.username }}</td>
+                        <td>{{ cuenta.email }}</td>
+                        <td>{{ cuenta.contraseña }}</td>
+                        <td> <a name="" id="" class="btn btn-info" href="{% url 'actualizar cuenta' cuenta.username %}" role="button">Actualizar</a> 
+                            |
+                            <a name="" id="" class="btn btn-danger" href="{% url 'eliminar cuenta' cuenta.username %}" role="button">Borrar</a> </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>       
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

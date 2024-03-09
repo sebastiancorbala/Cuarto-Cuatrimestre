@@ -1,0 +1,51 @@
+
+
+.mas-vendidos {
+  margin-left: 300px; 
+  margin-right: 300px; 
+}
+.mas-vendidos p {
+  font-size: 20px; 
+  color: #333; 
+}
+.mas-vendidos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.mas-vendidos li {
+  width: calc(25% - 10px); 
+  margin-right: 10px; 
+  margin-bottom: 20px; 
+  list-style-type: none; 
+}
+
+.imagen-producto {
+  width: 100%; 
+  height: auto; 
+  transition: transform 0.2s ease-in-out; 
+}
+
+.imagen-producto.agrandar {
+  transform: scale(1.1);
+}
+
+.mas-vendidos div {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.boton-agregar {
+  background-color: #eff5a0;
+  color: #2c2b2b;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.boton-agregar:hover {
+  background-color: #ccddaa; 
+}

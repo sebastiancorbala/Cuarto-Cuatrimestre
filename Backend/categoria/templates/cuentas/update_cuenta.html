@@ -1,0 +1,25 @@
+<!--UPDATE-ACTUALIZAR 
+#Para ingresar los datos de la nueva categoria -->
+
+{% extends "base.html" %}
+
+{% block titulo %} Actualizar cuenta {% endblock %}
+
+{% block contenido %} 
+
+
+<div class="card">
+    <div class="card-header">
+        Actualizar una cuenta
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos de la cuenta</h4>
+
+        {% include 'cuentas/form.html' %}
+
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

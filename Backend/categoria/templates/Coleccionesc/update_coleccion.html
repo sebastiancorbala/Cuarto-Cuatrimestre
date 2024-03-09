@@ -1,0 +1,25 @@
+<!--UPDATE-ACTUALIZAR 
+#Para ingresar los datos de la nueva coleccion -->
+
+{% extends "base.html" %}
+
+{% block titulo %} Actualizar coleccion {% endblock %}
+
+{% block contenido %} 
+
+
+<div class="card">
+    <div class="card-header">
+        Actualizar una coleccion
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos de la colección</h4>
+
+        {% include 'Coleccionesc/form.html' %}
+
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

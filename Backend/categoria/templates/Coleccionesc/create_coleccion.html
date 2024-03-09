@@ -1,0 +1,24 @@
+<!--CREATE-CREAR 
+#Para ingresar los datos de la nueva coleccion -->
+
+{% extends "base.html" %}
+
+{% block titulo %} Agregar nueva coleccion {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Crear una coleccion
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos de la coleccion</h4>
+
+        {% include 'Coleccionesc/form.html' %}
+
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

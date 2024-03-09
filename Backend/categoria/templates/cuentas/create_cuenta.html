@@ -1,0 +1,24 @@
+<!--CREATE-CREAR 
+#Para ingresar los datos de la nueva cuenta -->
+
+{% extends "base.html" %}
+
+{% block titulo %} Agregar nueva cuenta {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Crear una cuenta
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos de la cuenta</h4>
+
+        {% include 'cuentas/form.html' %}
+
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}
