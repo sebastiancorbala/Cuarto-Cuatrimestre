@@ -1,0 +1,14 @@
+.pendientes-container {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+
+.pendientes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pendientes-item {
+  margin-bottom: 10px;
+}

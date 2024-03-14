@@ -1,0 +1,17 @@
+.pendientes-list-container {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+  }
+  
+  .pendientes-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; 
+    size: 40px;
+  }
+  
+  .pendientes-list li {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }

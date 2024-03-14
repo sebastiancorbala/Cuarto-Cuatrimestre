@@ -1,0 +1,16 @@
+.unresolved-pendientes-container {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+  }
+  
+  .unresolved-pendientes-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 30px;
+  }
+  
+  .unresolved-pendientes-item {
+    margin-bottom: 10px;
+  }

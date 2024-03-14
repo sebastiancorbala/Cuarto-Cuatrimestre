@@ -1,0 +1,14 @@
+.resolved-pendientes-container {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+  }
+  
+  .resolved-pendientes-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resolved-pendientes-item {
+    margin-bottom: 10px;
+  }
