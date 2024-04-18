@@ -1,0 +1,23 @@
+<form method="POST" enctype="multipart/form-data">
+
+  {% csrf_token %}
+  {% for campo in form %}
+      <div class="mb-3">
+          <label for="{{ campo.id_for_label }}" class="form-label">{{ campo.label }}</label>
+          {{ campo }}
+          {% if campo.help_text %}
+              <div class="form-text">{{ campo.help_text }}</div>
+          {% endif %}
+          {% if campo.errors %}
+              <div class="alert alert-danger">
+                  {% for error in campo.errors %}
+                      <span>{{ error }}</span><br>
+                  {% endfor %}
+              </div>
+          {% endif %}
+      </div>
+  {% endfor %}
+
+  <input type="submit" value="Enviar información" class="btn btn-success">
+  <a href="{% url 'usuarios_list' %}" class="btn btn-primary">Cancelar</a>
+</form>

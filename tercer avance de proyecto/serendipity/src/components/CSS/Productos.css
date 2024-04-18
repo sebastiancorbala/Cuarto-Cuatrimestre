@@ -1,0 +1,97 @@
+.productos {
+    text-align: center; 
+  }
+  
+  .titulo {
+    font-size: 48px;
+    margin-bottom: 20px; 
+  }
+  
+  .menu-productos {
+    margin-top: 20px; 
+  }
+
+  .foto-frase {
+    display: flex;
+    align-items: center;
+    margin: 0 300px;
+  }
+  
+  .imagen-mujer1 {
+    flex: 1; /* La imagen ocupa el espacio disponible */
+  }
+  
+  .imagen-mujer1 img {
+    width: 80%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;
+  }
+  
+  .texto-frase {
+    flex: 0.9; 
+    text-align: left; 
+    padding-left: 5px;
+    align-self: flex-start; 
+    font-size: 20px;
+    font-style: italic; 
+    color: #333;
+  }
+
+  .titulo-categorias {
+    font-size: 35px;
+    color: #fbe189;
+  }
+
+  .linea-separadora {
+    border: 1px solid #ccc; 
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+    margin-left: 365px;
+    margin-right: 365px;
+  }
+  .categorias-container {
+    display: flex;
+    justify-content: center; /* Alinea las imágenes al centro horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    max-width: 800px; /* Ancho máximo para evitar que se estire demasiado */
+    margin-left: auto; /* Alinear al centro */
+    margin-right: auto; /* Alinear al centro */
+  }
+  
+
+  /* Estilos para cada categoria */
+  .categoria {
+    margin-right: 10px; /* Este es el espacio entre categorias */
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  /* Imagenes de las categorias */
+  .categoria-img {
+    width: 200px;
+    height: auto; 
+    margin-bottom: 20px;
+  }
+  
+  
+ /* botones */
+ .categoria-boton {
+  background-color: #fbe189;
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+/* Estilos adicionales para los botones */
+.categoria-boton:hover {
+  background-color: #ffd700; 
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block titulo %} Borrar un usuario {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Eliminar usuario
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">¿Estás seguro de eliminar este usuario?</h4>
+
+        <p>ID del Usuario: {{ usuario.IDUsuario }}</p>
+        <p>Nombre del Usuario: {{ usuario.NombreUsuario }}</p>
+        <p>Email del Usuario: {{ usuario.Email }}</p>
+        <!-- Agrega más campos según tu modelo de Usuario -->
+
+        <form method="POST" action="{% url 'usuario_delete' usuario.IDUsuario %}">
+            {% csrf_token %}
+            <input type="submit" value="Eliminar Usuario" class="btn btn-danger">
+            <a href="{% url 'usuarios_list' %}" class="btn btn-primary">Cancelar</a>
+        </form>
+
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

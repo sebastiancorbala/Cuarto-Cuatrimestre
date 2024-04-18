@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block titulo %} Lista de productos {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        <a name="" id="" class="btn btn-success" href="{% url 'producto_new' %}" role="button">Agregar nuevo producto</a>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Productos</h4>
+
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th> ID Producto </th>
+                    <th> Nombre </th>
+                    <th> Descripción </th>
+                    <th> Precio </th>
+                    <th> Categoría </th>
+                    <th> Acciones </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for producto in productos %}
+                <tr>
+                    <td>{{ producto.IDProducto }}</td>
+                    <td>{{ producto.NombreProducto }}</td>
+                    <td>{{ producto.Descripcion }}</td>
+                    <td>{{ producto.Precio }}</td>
+                    <td>{{ producto.IDCategoria }}</td>
+                    <td> 
+                        <a href="{% url 'actualizar_producto' pk=producto.IDProducto %}" class="btn btn-info" role="button">Actualizar</a> |
+                        <a href="{% url 'eliminar_producto' pk=producto.IDProducto %}" class="btn btn-danger" role="button">Borrar</a> 
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>       
+</div>
+
+{% endblock %}

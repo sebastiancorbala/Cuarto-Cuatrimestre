@@ -1,0 +1,93 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.producto-info {
+  width: calc(50% - 10px); /* Tamaño del producto */
+  padding-right: 20px; /* Espacio entre las secciones */
+  box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+.producto-imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.producto-img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.qr-container {
+  width: calc(50% - 10px); /* Tamaño del QR */
+  padding-left: 20px; /* Espacio entre las secciones */
+  box-sizing: border-box; /* Incluye el padding en el ancho */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.producto-titulo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.producto-descripcion {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.producto-precio {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.qr-img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.categorias {
+  width: 100%; /* Ancho completo */
+  margin-top: 30px; /* Espacio superior entre secciones */
+}
+
+.categorias-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+}
+
+.categoria {
+  margin-bottom: 20px; /* Espacio entre categorías */
+  text-align: center;
+}
+
+.categoria-img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.categoria-boton {
+  background-color: #fbe189;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.categoria-boton:hover {
+  background-color: #ffd700;
+}

@@ -1,0 +1,25 @@
+.banner-rostro {
+  display: flex;
+  justify-content: center; /* Cambiado a centrado */
+  align-items: center;
+  margin-top: 50px;
+}
+
+.banner-img {
+  width: 400px; /* Cambiado el ancho a 400px */
+  margin: 0; 
+  margin-right: 20px; /* Espacio entre las imágenes */
+}
+
+.banner-img:nth-child(2) {
+  width: 442px; /* Ancho específico para la segunda imagen */
+}
+
+.frase {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.seccion-carrito {
+    margin-top: 70px;
+}

@@ -1,0 +1,33 @@
+.banner-accesorios {
+  display: flex; 
+  justify-content: center; /* Cambiado a centrado */
+  align-items: center; 
+  margin-top: 50px;
+}
+
+/* Estilo para cada imagen del banner */
+.banner-img {
+  width: 300px; /* Cambiado el ancho a 300px */
+  margin: 0 10px; /* Espacio entre las imágenes */
+}
+
+.banner-img:nth-child(1) {
+  width: 438px; /* Ancho específico para la primera imagen */
+}
+
+.banner-img:nth-child(2) {
+  width: 420px; /* Ancho específico para la segunda imagen */
+}
+
+.banner-img:nth-child(3) {
+  width: 442px; /* Ancho específico para la tercera imagen */
+}
+
+ 
+  .frase {
+    margin-top: 12px; 
+    font-size: 22px; 
+    text-align: left; 
+    font-style: italic;
+    margin-left: 300px;
+  }

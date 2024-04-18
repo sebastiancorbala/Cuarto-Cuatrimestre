@@ -1,0 +1,38 @@
+<!--UPDATE-ACTUALIZAR 
+#Para ingresar los datos de la nueva categoria -->
+
+{% extends "base.html" %}
+
+{% block titulo %} Actualizar categoria {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Actualizar una categoria
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos de la categoria</h4>
+
+        <form enctype="multipart/form-data" method="post">
+            {% csrf_token %}
+            {% for campo in formulario %}
+            <div class="mb-3">
+                <label for="{{ campo.name }}" class="form-label">{{ campo.label }}</label>
+                <input type="{{ campo.field.widget.input_type }}"
+                    class="form-control" name="{{ campo.name }}" id="{{ campo.name }}"
+                    aria-describedby="helpId" placeholder="{{ campo.label }}"
+                    value="{{ campo.value | default:'' }}">
+            </div>
+            <div class="col-12 help-text">{{ campo.errors }}</div>
+            {% endfor %}
+            <input name="" id="" class="btn btn-success" type="submit" value="Guardar cambios">
+            <a name="" id="" class="btn btn-primary" href="{% url 'categoria_list' %}" role="button">Cancelar</a>
+        </form>
+
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

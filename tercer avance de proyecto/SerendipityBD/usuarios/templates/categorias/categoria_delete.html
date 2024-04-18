@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block titulo %} Borrar categoría {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Eliminar categoría
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">¿Estás seguro de eliminar esta categoría?</h4>
+
+        <p>ID de la Categoría: {{ categoria.IDCategoria }}</p>
+        <p>Nombre de la Categoría: {{ categoria.NombreCategoria }}</p>
+        <p>Descripción de la Categoría: {{ categoria.DescripcionCategoria }}</p>
+
+        <form method="POST" action="{% url 'categoria_delete' categoria.IDCategoria %}">
+            {% csrf_token %}
+            <input type="submit" value="Eliminar Categoría" class="btn btn-danger">
+            <a href="{% url 'categoria_list' %}" class="btn btn-primary">Cancelar</a>
+        </form>
+
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

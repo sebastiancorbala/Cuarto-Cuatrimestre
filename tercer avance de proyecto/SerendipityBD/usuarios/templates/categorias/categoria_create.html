@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block titulo %} Agregar nueva categoría {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Crear una categoría</h5>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos de la categoría</h4>
+
+        <!-- Formulario para la creación de categorías -->
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit" value="Guardar" class="btn btn-success">
+            <a href="{% url 'categoria_list' %}" class="btn btn-primary">Cancelar</a>
+        </form>
+
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

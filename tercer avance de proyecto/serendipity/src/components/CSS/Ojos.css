@@ -1,0 +1,29 @@
+.titulo {
+    text-align: center; /* Centra el texto */
+  }
+
+
+.banner-ojos {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px; 
+}
+
+/* Estilo para cada imagen del banner */
+.banner-img {
+    width: 300px; 
+    margin: 0 10px;
+}
+
+.banner-img:nth-child(1) {
+    width: 438px; 
+}
+
+.banner-img:nth-child(2) {
+    width: 420px; 
+}
+
+.banner-img:nth-child(3) {
+    width: 442px; 
+}

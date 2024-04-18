@@ -1,0 +1,20 @@
+.banner-labios {
+  display: flex;
+  justify-content: center; /* Cambiado a centrado */
+  align-items: center;
+  margin-top: 50px;
+}
+
+.banner-img {
+  width: 300px; /* Cambiado el ancho a 300px */
+  margin: 20px; /* Espacio entre las imágenes */
+}
+
+.banner-img:nth-child(1),
+.banner-img:nth-child(2) {
+  width: 438px; /* Ancho específico para las dos primeras imágenes */
+}
+
+.banner-img:nth-child(3) {
+  width: 442px; /* Ancho específico para la tercera imagen (la última) */
+}
